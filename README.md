@@ -90,8 +90,8 @@ Then I applied sliding window search on first frame and second frame onwards I a
 
 To calculate radious of curvature of the lane I using same points generated in previous step for drawing quadrilateral. Since here we have line equations in pixel unit we need to map those to real world dimentions. For these mapping I am using multiplying factor of 
 
-for pixel in y diection 30/720 meters per pixel 
-for pixel in x diection 3.7/700 meters per pixel 
+for pixel in y diection 40/720 meters per pixel 
+for pixel in x diection 3.7/600 meters per pixel 
 
 after this mapping I am using `cv2.polyfit()` to regenerate the modified polynomial coefficient and then I am using formula specified in lectures to calculate the radious of curvature. While displaying radious of curvature I am taking average of both lane radious of curvature.
 
